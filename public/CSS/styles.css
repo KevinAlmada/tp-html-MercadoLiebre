@@ -1,0 +1,141 @@
+:root{
+    /* COLORES */
+    --color-amarillo : #EAC926;
+    --color-azul : #03264C;
+    --color-celeste : #1259c3;
+    --color-grisOscuro : #666;
+    --color-grisClaro : #ebebeb;
+    --color-verde : #39b54a;
+    /* FUENTES */
+    --font-roboto : "Roboto";
+    --body-size:12px;
+    --titles-size:24px;
+    --price-size:18px;
+    --discount-size:16;
+    --description-size:16px;
+
+}/* sirve para declarar variables , ejemplo color:#000000 y al llamar a la variable me trae su valor  */
+body{
+    font-family: var(--font-roboto);
+    margin: 0px;
+    padding: 0px;
+    background-color: var(--color-grisClaro);
+}
+.logo{
+    width: 130px;
+    margin: 10px;
+    display: block;
+}
+.botonLupa{
+
+}
+header{
+    background-color: var(--color-amarillo);
+    padding-bottom: 10px;
+}
+header p{
+    text-align: center;
+}
+.nav-bar{
+    display: none;
+}
+.barra{
+    display: inline-block;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+header ul{
+    list-style-type: none;
+    margin-left: -35px;
+}
+header li{
+    margin-left: 0px;
+}
+.titulares{
+    font-size: var(--titles-size);
+}
+.precios{
+    font-size: var(--price-size);
+}
+.descuentos{
+    font-size: var(--discount-size);
+}
+.descripcion{
+    display: none;
+    font-size: var(--description-size);
+}
+
+.burger-menu{
+    background-color: var(--color-celeste);
+    padding: 7px;
+    width: 15px;
+    border-radius: 5px;
+    margin-left: 132px;
+}
+
+#burger{
+    display: inline;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    
+}
+footer section i{
+    font-size: 2em;
+    color: var(--color-celeste);
+    
+}
+footer section{
+    text-align: center;
+}
+main{
+    width: 90%;
+    margin: 0 auto;
+    
+}
+.card{
+    margin-bottom: 10px;
+    background-color: white;
+}
+.banner{
+    display: none;
+}
+.card .card-content{
+    border-top: solid 1px var(--color-grisClaro);
+    padding: 15px;
+}
+.camion{
+    display: inline;
+    border: var(--color-verde) 1px solid;
+    border-radius: 50%;
+    color:var(--color-verde);
+    padding: 9px;
+    width: fit-content;
+}
+/* TABLET */
+@media screen and (min-width:361px){
+    .nav-bar{
+        display: block;
+    }
+
+    .card{
+        box-shadow: 15px 15px 10px rgb(100, 100, 100);
+
+    }
+
+    .descripcion{
+        display: block;
+    }
+    .burger-menu{
+        display: none;
+    }
+    
+    
+}
+/* DESKTOP */
+@media screen and (min-width:769px){
+    
+}
